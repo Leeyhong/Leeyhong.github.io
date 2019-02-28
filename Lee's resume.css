@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none
+}
+#resume{
+	width: 1090px;
+	margin: auto;
+	height: auto;
+}
+.header{
+	height: 80px;
+	width: 1090px;
+	margin: auto;
+	line-height: 80px;
+}
+.header img{
+	margin-left: 10px;
+	float: left;
+	margin-top: 15px
+}
+.header .catalog{
+	float: right;
+}
+.header .catalog ul{
+	height: 60px;
+	margin-top: 10px;
+	background: #000;
+	border-radius: 30px;
+	width: 550px;
+	padding-left: 60px
+}
+.header .catalog li{
+	float: left;
+	width: 80px;
+	text-align: center;
+	color: #fff;
+	height: 60px;
+    line-height: 60px;
+}
+.header .catalog li:hover{
+	cursor: pointer;
+}
+.header .catalog li.active{
+	background: #f3ff41;
+	color: #000;
+}
