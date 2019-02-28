@@ -79,10 +79,9 @@ a{
   }
   .aboutmeLeft img{
 	float: left;
-	width: 300px;
-	border-radius: 50%;
+	border-radius: 20%;
 	margin-top: 50px;
-	margin-left: 150px
+	margin-left: 200px
   }
   .aboutmeRight{
   	width: 320px;
@@ -93,7 +92,9 @@ a{
 	margin-top: 50px;
 	margin-right: 100px;
 	padding-bottom: 20px;
-	line-height: 30px
+	line-height: 30px;
+	background:url(./timg.jpg) ;
+	background-size:cover;
   }
   .aboutmeRight p{
   	margin: 0 10px;
@@ -120,6 +121,11 @@ a{
       .exContent{
       	height: 500px;
       }
-
+.selfEvaluation{
+	width: 1090px;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
 
      
