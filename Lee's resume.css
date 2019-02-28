@@ -5,10 +5,8 @@
 li{
 	list-style: none
 }
-#resume{
-	width: 1090px;
-	margin: auto;
-	height: auto;
+a{
+	text-decoration: none;
 }
 .header{
 	height: 80px;
@@ -17,7 +15,7 @@ li{
 	line-height: 80px;
 }
 .header img{
-	margin-left: 10px;
+	margin-left: 150px;
 	float: left;
 	margin-top: 15px
 }
@@ -29,21 +27,99 @@ li{
 	margin-top: 10px;
 	background: #000;
 	border-radius: 30px;
-	width: 550px;
-	padding-left: 60px
+	width: 400px;
+	padding-left:45px;
+	margin-right: 100px;
 }
 .header .catalog li{
 	float: left;
-	width: 80px;
+	width: 90px;
 	text-align: center;
 	color: #fff;
 	height: 60px;
     line-height: 60px;
 }
+.header .catalog li a{
+	color: #fff;
+	width: 90px;
+	height: 60px;
+    line-height: 60px;
+    display: inline-block;
+}
 .header .catalog li:hover{
 	cursor: pointer;
 }
-.header .catalog li.active{
+.header .catalog li.active a{
 	background: #f3ff41;
 	color: #000;
 }
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+     background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #d3dce6;
+  }
+  .aboutme{
+	width: 1090px;
+	margin: auto;
+	height: auto;
+	text-align: center;
+  }
+  .me{
+	text-align: center;
+  }
+  .aboutmeLeft img{
+	float: left;
+	width: 300px;
+	border-radius: 50%;
+	margin-top: 50px;
+	margin-left: 150px
+  }
+  .aboutmeRight{
+  	width: 320px;
+  	height: auto;
+	border: 1px solid #e2e2e2;
+	float: right;
+	padding-top: 10px;
+	margin-top: 50px;
+	margin-right: 100px;
+	padding-bottom: 20px;
+	line-height: 30px
+  }
+  .aboutmeRight p{
+  	margin: 0 10px;
+  }
+   .aboutmeRight p b{
+   	color: #f00;
+   	font-size: 16px;
+   }
+   .experience{
+   	clear: both;
+   	width: 1090px;
+	margin: auto;
+	height: auto;
+	text-align: center;
+   }
+      .exTitle h2{
+      	height: 60px;
+      	line-height: 60px;
+      	display: inline-block;
+      	margin: 0 20px;
+      	font-weight: normal;
+      	margin-top: 20px;
+      }
+      .exContent{
+      	height: 500px;
+      }
+
+
+     
