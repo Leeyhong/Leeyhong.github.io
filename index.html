@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lee's resume</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+	<link rel="shortcut icon" href="lollipop.ico">
+	<link rel="stylesheet" type="text/css" href="./Lee's resume.css">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+	<div id="resume">
+		<div class="header">
+			<img src="./logo.png">
+			<div class="catalog">
+				<ul>
+					<li v-for="(item,index) in catalog" :class="{active:index==ins}" @click="active(index)">
+						<a href="javascript:void(0)" @click="goAnchor('#anchor')">
+							{{item}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="block">
+			    <el-carousel trigger="click" height="410px">
+			      <el-carousel-item v-for="item in bannerImg"  >
+			      	<img :src="item.image">
+			      </el-carousel-item>
+			    </el-carousel>
+		    </div>
+		</div>
+		<div class="aboutme" id="aboutme">
+			<div class="exTitle">
+				<img src="./eTitleleft.png">
+				<h2>自我介绍</h2>
+				<img src="./eTitleRight.png">
+			</div>
+			<div class="aboutmeLeft">
+				<img src="./Lee.jpg" alt="">
+			</div>
+			<div class="aboutmeRight">
+				<p class="me">自我介绍</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;我叫黎艳红，毕业于九江学院，专业是计算机应用技术，在上家公司主要从事于<b>web前端开发</b>，根据UI设计师给的设计稿编写静态页面及进行页面间交互，使用的框架是vue2.0+elementUI。
+				</p>
+			</div>
+		</div>
+		<div class="experience" id="experience">
+			<div class="exTitle">
+				<img src="./eTitleleft.png">
+				<h2>项目经验</h2>
+				<img src="./eTitleRight.png">
+			</div>
+			<div class="exContent">
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		new Vue({
+			el:"#resume",
+			data(){
+				return{
+					catalog:[
+						"首页","关于我","项目经验","自我评价"
+					],
+					ins:0,
+					bannerImg:[
+						{image:"./caishui.png"},
+						{image:"./falv.png"},
+						{image:"./gongshang.png"},
+						{image:"./yimin.png"}
+					]
+				}
+			},
+			methods:{
+				active(num){
+					this.ins=num
+				},
+				 goAnchor(selector) {
+				 	console.log(this)
+			        var anchor = this.$el.querySelector(selector)
+			        document.body.scrollTop = anchor.offsetTop; // chrome
+			        document.documentElement.scrollTop = anchor.offsetTop; // firefox
+			    }
+			}
+		})
+	</script>
+
+</body>
+</html>
