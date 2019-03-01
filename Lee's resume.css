@@ -127,5 +127,17 @@ a{
 	margin: auto;
 	text-align: center;
 }
-
+.seContent{
+	margin-top: 20px;
+	text-align: left;
+	margin: auto;
+	padding: 15px;
+	line-height: 30px;
+	border: 1px solid #e2e2e2;
+	width: 400px;
+	margin-bottom: 20px;
+	height: auto;
+}
+.seContent p{
+}
      

@@ -25,7 +25,7 @@
 		</div>
 		<div class="banner">
 			<div class="block">
-			    <el-carousel trigger="click" height="410px">
+			    <el-carousel trigger="click" height="410px" style="background-size: cover;">
 			      <el-carousel-item v-for="item in bannerImg"  >
 			      	<img :src="item.image">
 			      </el-carousel-item>
@@ -65,6 +65,9 @@
 				<img src="./eTitleRight.png">
 			</div>
 			<div class="seContent">
+				<p>1.待人真诚热情、为人随和、善于沟通、有良好的人际关系和很强的适应能力。</p>
+				<p>2.工作认真负责、踏实肯干、具有较强的团体协作精神和独立的工作能力有很强的责任心和工作干劲，不惧挑战。</p>
+				<p>3.有一定的亲和力及管理能力，思维灵活，反映快，接收能力强，字迹工整。</p>
 				
 			</div>
 		</div>
@@ -79,10 +82,10 @@
 					],
 					ins:0,
 					bannerImg:[
-						{image:"./caishui.png"},
-						{image:"./falv.png"},
-						{image:"./gongshang.png"},
-						{image:"./yimin.png"}
+						{image:"./spring1.jpg"},
+						{image:"./spring2.jpg"},
+						{image:"./spring3.jpg"},
+						{image:"./spring4.jpg"}
 					]
 				}
 			},
@@ -91,10 +94,10 @@
 					this.ins=num
 				},
 				 goAnchor(selector) {
-				 	console.log(this)
-			        var anchor = this.$el.querySelector(selector)
-			        document.body.scrollTop = anchor.offsetTop; // chrome
-			        document.documentElement.scrollTop = anchor.offsetTop; // firefox
+				 	// console.log(this)
+			   //      var anchor = this.$el.querySelector(selector)
+			   //      document.body.scrollTop = anchor.offsetTop; // chrome
+			   //      document.documentElement.scrollTop = anchor.offsetTop; // firefox
 			    }
 			}
 		})
