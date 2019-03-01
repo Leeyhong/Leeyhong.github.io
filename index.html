@@ -15,11 +15,10 @@
 			<img src="./logo.png">
 			<div class="catalog">
 				<ul>
-					<li v-for="(item,index) in catalog" :class="{active:index==ins}" @click="active(index)">
-						<a href="javascript:void(0)" @click="goAnchor('#anchor')">
-							{{item}}
-						</a>
-					</li>
+					<li><a href="#" class="active">首页</a></li>
+					<li><a href="#aboutme">关于我</a></li>
+					<li><a href="#experience">项目经验</a></li>
+					<li><a href="#selfEvaluation">自我评价</a></li>
 				</ul>
 			</div>
 		</div>
@@ -68,7 +67,6 @@
 				<p>1.待人真诚热情、为人随和、善于沟通、有良好的人际关系和很强的适应能力。</p>
 				<p>2.工作认真负责、踏实肯干、具有较强的团体协作精神和独立的工作能力有很强的责任心和工作干劲，不惧挑战。</p>
 				<p>3.有一定的亲和力及管理能力，思维灵活，反映快，接收能力强，字迹工整。</p>
-				
 			</div>
 		</div>
 	</div>
@@ -86,22 +84,16 @@
 						{image:"./spring2.jpg"},
 						{image:"./spring3.jpg"},
 						{image:"./spring4.jpg"}
-					]
+					],
+					activeBtn: 0,
+					buttonArr: ["整体分析", "错题整理", "提分训练"],
 				}
 			},
 			methods:{
-				active(num){
-					this.ins=num
-				},
-				 goAnchor(selector) {
-				 	// console.log(this)
-			   //      var anchor = this.$el.querySelector(selector)
-			   //      document.body.scrollTop = anchor.offsetTop; // chrome
-			   //      document.documentElement.scrollTop = anchor.offsetTop; // firefox
-			    }
+				
 			}
 		})
 	</script>
-
+	
 </body>
 </html>

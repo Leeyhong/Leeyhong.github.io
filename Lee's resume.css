@@ -49,7 +49,7 @@ a{
 .header .catalog li:hover{
 	cursor: pointer;
 }
-.header .catalog li.active a{
+.header .catalog li a.active{
 	background: #f3ff41;
 	color: #000;
 }
